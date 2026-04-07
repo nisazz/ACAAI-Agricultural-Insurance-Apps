@@ -18,8 +18,7 @@ retry_session = retry(cache_session, retries=5, backoff_factor=0.2)
 openmeteo = openmeteo_requests.Client(session=retry_session)
 
 # Initialize Firebase Admin SDK
-#cred = credentials.Certificate("C:\\Users\\hanis\\OneDrive\\Desktop\\FYP_ACAAI\\ACAAI\\acaai-89d12-firebase-adminsdk-ulmd4-d27d2b98c0.json")
-cred = credentials.Certificate("C:\\Users\\hanis\\OneDrive\\Desktop\\FYP_ACAAI\\ACAAI\\config\\acaai-89d12-firebase-adminsdk-ulmd4-81be1f20dd.json")
+cred = credentials.Certificate("filecredentials.json")
 firebase_admin.initialize_app(cred)
 
 # Get Firestore database instance
