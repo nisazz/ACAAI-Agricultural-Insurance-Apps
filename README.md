@@ -43,3 +43,104 @@ This project introduces a **weather index-based insurance model** that:
 ## Compensation Assessment Flowchart
 <img width="371" height="835" alt="image" src="https://github.com/user-attachments/assets/0c231fd6-1785-4073-9d18-6ba47ddee596" />
 
+
+---
+
+## 📊 Data Pipeline
+The data pipeline includes:
+- Data ingestion from API and historical datasets  
+- Data cleaning (handling missing values, normalization)  
+- Feature engineering (RAI & SPI calculations)  
+- Data storage and integration with application backend  
+
+---
+
+## 🧮 Index Calculations
+- **RAI (Rainfall Anomaly Index)**: Measures deviation of rainfall from normal conditions  
+- **SPI (Standardised Precipitation Index)**: Identifies drought and excessive rainfall conditions  
+
+These indices are used to trigger insurance claims  
+
+---
+
+## 🛠️ Tech Stack
+
+### 📱 Frontend (Mobile Application)
+- **React Native (JavaScript)**  
+  Used to develop a cross-platform mobile application (iOS & Android) with a user-friendly interface.  
+  Modules implemented include:
+  - User Authentication (registration & login)
+  - Main Menu Dashboard
+  - Policy Management (purchase, claim, appeal)
+  - Support & Inquiry features
+
+### ⚙️ Backend & API
+- **Flask (Python)**  
+  Lightweight backend framework used to:
+  - Process weather data
+  - Compute RAI & SPI indices
+  - Implement rule-based claim validation
+  - Expose RESTful APIs for frontend integration
+
+### 📊 Data Engineering & Processing
+- **Python (pandas, NumPy, Matplotlib)**  
+  Used for:
+  - Building ETL pipelines (Extract, Transform, Load)
+  - Data cleaning and preprocessing
+  - Rainfall data analysis
+  - RAI & SPI calculations
+  - Data visualization during development
+
+### ☁️ Database & Authentication
+- **Firebase (Google Cloud)**  
+  Used as the backend-as-a-service for:
+  - User authentication and account management
+  - Real-time database for storing user data, policies, and claims
+  - Application hosting and integration support
+
+### 🌦️ Data Source
+- **Open-Meteo API**  
+  Provides:
+  - Historical rainfall data (10 years) for baseline modeling
+  - Recent rainfall data (30 days) for claim validation
+  - Reliable, real-time weather data via API integration
+
+### 🧑‍💻 Development Tools
+- **Visual Studio Code**  
+  Primary development environment for:
+  - Python backend development
+  - React Native mobile application
+  - API integration and testing
+
+### 📌 Methodology
+- **Solo Scrum (Agile Development)**  
+  Development was structured into multiple sprints:
+  - UI Development
+  - User Account Module
+  - Main Menu Module
+  - Policy Module
+  - Support Module
+  - Assessment Module  
+
+  Each sprint focused on delivering a functional component within a 2-week cycle.
+---
+
+## 📈 Impact
+- ⏱️ Faster insurance claim processing  
+- 💰 Reduced operational costs  
+- 🔍 Improved transparency and fairness  
+- 🌱 Supports farmers facing climate risks  
+
+---
+
+## 🔮 Future Improvements
+- Machine learning models for predictive risk analysis  
+- Integration with satellite or IoT weather data  
+- Expansion to additional climate variables (temperature, humidity)  
+- Full deployment of mobile application  
+
+---
+
+## 👩‍💻 Author
+**Hanisah Zainuddin**  
+
