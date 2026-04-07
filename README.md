@@ -137,7 +137,12 @@ These indices are used to trigger insurance claims
 - Machine learning models for predictive risk analysis  
 - Integration with satellite or IoT weather data  
 - Expansion to additional climate variables (temperature, humidity)  
-- Full deployment of mobile application  
+- Full deployment of mobile application
+
+---
+
+## Youtube Video
+Link: https://youtu.be/Bmiec-TPJes
 
 ---
 
